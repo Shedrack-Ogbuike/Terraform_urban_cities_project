@@ -1,0 +1,27 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# Terraform
+.terraform/
+.terraform.lock.hcl
+terraform.tfstate
+terraform.tfstate.backup
+*.tfstate.*
+
+# Airflow runtime and logs
+airflow/logs/
+airflow/*.pid
+airflow/*.err
+airflow/*.out
+airflow/*.log
+airflow/airflow.db
+airflow/simple_auth_manager_passwords.json.generated
+
+# Airflow config files to track (optional)
+# If you DON'T want airflow.cfg in git:
+airflow/airflow.cfg
+
+# Environment
+.env
